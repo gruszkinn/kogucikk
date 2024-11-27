@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.belleza-regular {
+    font-family: "Belleza", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Belleza', sans-serif;
+    background-color: #e9e9e9;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+header {
+    background-color: #222222;
+    color: #F5F1ED;
+    padding: 10px 0;
+    display: flex;
+}
+
+header .logo img {
+    max-height: 90px;
+}
+
+
+.logo {
+    width: 30%;
+    text-align: center;
+}
+
+nav {
+    width: 70%;
+}
+
+nav,
+i {
+    color: #9f7222;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+nav,
+i:hover {
+    color: #eba835;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 45px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #eba835;
+    ;
+}
+
+#o-nas {
+    color: #eeca2b83;
+    width: 100%;
+}
+
+#prace {
+    background-color: #e9e9e9;
+    width: 85%;
+    display: flex;
+    margin: auto;
+}
+
+.usluga {
+    background-color: #ffffff;
+    border: solid 1px #9f7222;
+    text-align: center;
+    width: 21%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#uslugi {
+    width: 100%;
+    
+}
+
+.uslugidiv {
+    width: 80%;
+    margin: auto;
+
+}
+
+.uslugidiv li {
+    margin-left: 1%;
+}
+
+.usluga img{
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.w-100 {
+    filter: brightness(70%);
+}
+
+h1, h2 {
+    color: #9f7222;
+}
+
+h3 {
+    color:#222222;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+p {
+    color: #222222;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+#kontakt {
+    width: 100%;
+}
+
+.kontakt-row {
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.danekontaktowe, .formularzkontaktowy {
+    width: 35%;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+.danekontaktowe ol {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 0;
+    margin: 0;
+}
+
+form input{
+    padding: 12px;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #9f7222;
+}
+
+form input:hover {
+    box-shadow: 2px 2px 5px #9f7222;
+}
+
+input[type="submit"] {
+    background-color: #9f7222;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: #eba835;
+    color: white;
+}
+
+.zobacz {
+    border: 1px solid #9f7222;
+    background-color: #9f7222;
+    color: white;
+    padding: 12px;
+    width: 35%;
+    margin: 10px 0;
+}
+
+.uslugidiv .zobacz {
+    width: 20%;
+}
+
+.zobacz a {
+    text-decoration: none;
+    color: white;
+}
+
+.zobacz:hover {
+    background-color: #eba835;
+}
+
+.carousel-caption {
+    color: #222222;
+}
+
+
+
+#stopka img {
+    max-height: 120px;
+}
+
+#stopka {
+    background-color: #222222;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.stopka2 {
+    text-align: left;
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+
+footer {
+    background-color: #131313;
+    color: white;
+    padding: 20px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+footer address p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Responsywność */
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav ul {
+        padding-top: 5px;
+    }
+
+    #prace {
+        width: 100%;
+        display: block;
+        padding-top: 5%;
+    }
+
+    .usluga {
+        width: 80%;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 2%;
+    }
+
+    .usluga img{
+        width: 100%;
+    }
+
+    #kontakt {
+        width: 100%;
+    }
+    
+    .kontakt-row {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .danekontaktowe, .formularzkontaktowy {
+        width: 80%;
+        margin: auto;
+        margin-top: 60px;
+    
+    }
+    
+    .danekontaktowe ol {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .uslugidiv .zobacz {
+        width: 50%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #9f7222;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img:focus {
+    outline: 2px solid #9f7222;
+}
